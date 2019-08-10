@@ -7103,7 +7103,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    SUBDIVISION_MAX_ITERATIONS = 10;
 	    kSplineTableSize = 11;
 	    kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
-	    float32ArraySupported = indexOf.call(global, 'Float32Array') >= 0;
+	    float32ArraySupported = global != null && indexOf.call(global, 'Float32Array') >= 0;
 	    A = function(aA1, aA2) {
 	      return 1.0 - 3.0 * aA2 + 3.0 * aA1;
 	    };
